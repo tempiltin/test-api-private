@@ -15,7 +15,7 @@ export default function RatesPage() {
   const [rates, setRates] = useState<RateItem[]>([]);
 
   useEffect(() => {
-    fetch("/api/exchange")
+    fetch("/api/a5IloIHx4lmwJPhgyHch0Hc043s4wZYQPqis_ST2ZQ8")
       .then((res) => res.json())
       .then((data: RateItem[]) => setRates(data))
       .catch((err) => console.error("API error:", err));
